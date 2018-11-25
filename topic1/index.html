@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <title>Hola mundo</title>
         <link rel="stylesheet" href="css/index.css">
-        
-       
+
     </head>
     <body>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -13,11 +12,20 @@
         <section id="section" onload="mostrar()">
             Hello World
         </section>
+    </br>
+        <button id="btn">Click aqui</button>
 
-        <script>
+
+<!--JS-->
+    <script>
         window.onload=function mostrar() {
             document.getElementById("section").style.display="block";
         }
-         </script>
+        var boton = document.getElementById('btn');
+        boton.addEventListener('click', function(){
+            alert("Usted hizo click")
+        })
+
+    </script>
     </body>
 </html>
